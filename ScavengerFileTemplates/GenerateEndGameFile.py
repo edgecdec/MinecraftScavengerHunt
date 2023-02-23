@@ -21,5 +21,10 @@ def generateEndGameFile():
     removeTagCommand += 'tag @a remove finished'
 
     with open(f'{SCAV_FUNCTION_DIR_PATH}control/scavenger_end_game.mcfunction', 'w+') as outfile:
-        outfile.write(f'{clearCommand}{removeTeamCommand}{removeScoreboardCommand}{removeTagCommand}')
+        outfile.write(
+            f'{clearCommand}'
+            f'{removeTeamCommand}'
+            f'{removeScoreboardCommand}'
+            f'{removeTagCommand}'
+        )
     outfile.close()
