@@ -14,3 +14,5 @@ FINISHED_TEAM_NAME = "ScavengerFin"
 SCAV_DICT = [row for row in csv.DictReader(open("ScavengerInfo.csv"))]
 
 NUM_ITEMS = len(SCAV_DICT)
+
+EXECUTE_AS_NEAREST_PLAYER = "execute as @p run"

@@ -58,7 +58,7 @@ def generateItemsToFindFiles(itemDict):
         tagAddCommand += f'{executeAsRunCommandPart} tag @s add {itemTag}\n\n'
 
         finishCommand = '# check to see if anyone has won\n'
-        finishCommand += 'function scavenger:control/see_if_anyone_finished\n\n'
+        finishCommand += f'{EXECUTE_AS_NEAREST_PLAYER} function scavenger:control/see_if_anyone_finished\n\n'
 
         with open(f'{SCAV_FUNCTION_DIR_PATH}items/scavenger_found_{itemTag}.mcfunction', 'w+') as outfile:
             outfile.write(

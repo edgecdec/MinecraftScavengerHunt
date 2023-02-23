@@ -14,5 +14,5 @@ execute as @a[distance=..5,tag=!iron_axe,team=ScavengerHunt] run scoreboard play
 execute as @a[distance=..5,tag=!iron_axe,team=ScavengerHunt] run tag @s add iron_axe
 
 # check to see if anyone has won
-function scavenger:control/see_if_anyone_finished
+execute as @p run function scavenger:control/see_if_anyone_finished
 
